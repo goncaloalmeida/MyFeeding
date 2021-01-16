@@ -23,6 +23,7 @@
 hs_err_pid*
 
 *.iml
+.ideia
 .gradle
 /local.properties
 /.idea/caches
