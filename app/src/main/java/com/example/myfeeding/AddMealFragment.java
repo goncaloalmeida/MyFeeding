@@ -17,24 +17,22 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import org.greenrobot.eventbus.EventBus;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.List;
+import java.util.Objects;
 
 public class AddMealFragment extends Fragment {
     private Meal meal;
-    private ArrayList<Meal> meals;
+    private List<Meal> meals;
 
     @Override
     public View onCreateView(
             LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState
     ) {
-        meals = new ArrayList<>();
-        meals.add(new Meal("aa", 1));
-        meals.add(new Meal("bb", 2));
-        meals.add(new Meal("cc", 3));
-        meals.add(new Meal("dd", 4));
-
+        meals = JSONReader.get_meals_from_file(getContext(), "all_food.json");
         return inflater.inflate(R.layout.fragment_add_meal, container, false);
     }
 

@@ -66,7 +66,7 @@ public class MealsAdapter extends
         }
     }
 
-    // Store a member variable for the contacts
+    // Store a member variable for the meals
     private List<Meal> mMeals;
 
     // Pass in the contact array into the constructor

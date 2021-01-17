@@ -1,0 +1,14 @@
+{
+  "food": [
+    {
+      "Name": "Iogurte",
+      "Calories": "1000",
+      "Weight": "100"
+    },
+    {
+      "Name": "Pão",
+      "Calories": "2000",
+      "Weight": "100"
+    }
+  ]
+}
